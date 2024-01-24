@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.netflixuiclone.ui.theme.NetflixUICloneTheme
+import androidx.compose.material3.ButtonDefaults
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -151,7 +152,7 @@ class MainActivity : ComponentActivity() {
                 }
 
                      androidx.compose.material3.Button(onClick = {},
-                        // colors =ButtonDefaults.buttonColors(backgroundColor = androidx.compose.ui.graphics.Color.Companion.White),
+                        colors =ButtonDefaults.buttonColors(androidx.compose.ui.graphics.Color.White),
                          shape = androidx.compose.foundation.shape.RoundedCornerShape(4.dp)
                  ){
                      androidx.compose.material3.Text(text = "Play", color = androidx.compose.ui.graphics.Color.Companion.Black, fontSize = 18.sp)
